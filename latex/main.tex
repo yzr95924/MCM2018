@@ -1,0 +1,133 @@
+\documentclass{icmmcm}
+\usepackage{graphicx} % For importing graphics.
+\usepackage{amssymb,amsmath,amsthm}
+%\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{bm}
+\usepackage{amstext}
+\usepackage{cite}
+\usepackage{subfigure,graphicx}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{color}
+\usepackage{algorithmic}
+\usepackage{geometry}
+%\usepackage{algorithm}
+\usepackage{verbatim}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+%\newtheorem{Theo1}{Theorem}
+%\newtheorem{Theo2}{Theorem}[section]
+%\newtheorem{Lemma}[Theo2]{Lemma}
+
+\hyphenation{plain}
+\newenvironment{senumerate}{\begin{enumerate}%
+%\addtolength{\itemsep}{-6pt}%
+}{\end{enumerate}}
+
+\newenvironment{sitemize}{\begin{itemize}%
+%\addtolength{\itemsep}{-6pt}%
+}{\end{itemize}}
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+\long\def\zp#1{{\color{red} \textbf{#1}}}
+\long\def\hao#1{{\color{blue} \textbf{Hao:#1}}}
+\long\def\yzr#1{{\color{blue} \textbf{#1}}}
+\long\def\rev#1{{\color{green} #1}}
+
+\newtheoremstyle{mythmsty}% name
+    {3pt}%        Space above
+    {3pt}%        Space below
+    {}%           Body font
+    {}%           Indent amount (empty = no indent, \parindent = para indent)
+    {\bfseries}%  Thm head font
+    {.}%          Punctuation after thm head
+    {.5em}%       Space after thm head: " " = normal interword space;
+          %       \newline = linebreak
+    {}%           Thm head spec (can be left empty, meaning `normal')
+\theoremstyle{mythmsty}
+\newtheorem{definition}{Definition}
+\newtheorem{problem}{Problem}
+\newtheorem{contribution}{Contribution}
+\newtheorem{condition}{Condition}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{construct}{Construction}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newcommand{\ie}{{\em i.e.}}
+\newcommand{\eg}{{\em e.g.}}
+\newcommand{\etal}{{\em et al.}}
+\newcommand{\para}[1]{\smallskip\noindent {\bf #1}}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\graphicspath{{figures/}}
+
+\title{The Analysis of Charger Station Network from the view of Graph Theory}
+
+%%% Which contest are you taking part in?  (Just one!)
+
+\contest{ICM}
+
+%%% The question you answered.  (Again, just the one.)
+
+\question{D}
+%%% Your Contest Team Control Number
+\team{76327}
+
+
+%%% A normal document would specify the author's name (and possibly
+%%% their affiliation or other information) in an \author command.
+%%% Because the ICM/MCM Contest rules specify that the names of the
+%%% team members, their advisor, and their institution should not
+%%% appear anywhere in the report, do *not* define an \author command.
+
+%%% Defining the \date command is optional.  If you leave it blank,
+%%% your document will include the date that the file is typeset, in
+%%% the form  ``Month dd, yyyy''.
+
+% \date{}
+
+%%% End Title Block
+%%% ---------------
+%\geometry{left=2.5cm,right=2cm,top=1cm,bottom=1cm}
+\begin{document}
+
+%%% ---------------
+%%% Summary
+
+\input{handout}
+
+
+%%% End Summary
+%%% ---------------
+
+%%% ---------------
+%%% Print Title Block, Contents, et al.
+
+\maketitle
+\tableofcontents
+
+%%% Uncomment the following lines by deleting the % sign
+%%% if you have figures or tables in your report:
+% \listoffigures
+% \listoftables
+
+%%% End Print Title Block, Contents, et al.
+%%% ---------------
+\input{introduction}
+\input{profile}
+\input{architecture}
+\input{basic_model}
+\input{problem_formulation}
+\input{method}
+\input{model_extend}
+\input{conclusion}
+%%% Feel free to choose any bibliography style you like.
+\bibliographystyle{IEEEtrans}
+%%% The filename (without the bib extension) of your bibliography file.
+\bibliography{icmmcm}
+
+\end{document}

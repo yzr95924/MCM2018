@@ -1,0 +1,80 @@
+\section{The Extension of Our Model}
+In this section, we extend our model to consider other factor (\eg. time evolution) and discuss how those factors shape our model.
+
+\subsection{The Time Evolution of Charging Station Construction}
+\label{time}
+When considering the time evolution of the charging station construction, a competition model based on Voltera Equation has been applied. Where the competition relation is given by,
+
+\begin{equation}
+\label{competition}
+  \frac{d}{dt} N_i = r_i x_i ( 1- \frac{\sum \alpha_{ij}x_j}{K_i})
+\end{equation}
+Where $N_i$ is the number of a certain specie, $\alpha$ is a second order tensor describing the iteration among different "species". When there are 2 "species", which can be reasonable determined through historical data.
+
+For our case, the problem reduced to a 2 "species" competing problem. Where we set $N_e,N_t$ as the number of electrical vehicles and traditional vehicles respectively.
+
+Therefore the Lotka-Volterra equations are:
+
+\begin{equation}
+\label{competition_2}
+\left\{
+       \begin{array}{lr}
+             \frac{d}{dt} N_e & = r_e N_e ( 1- \frac{N_e+\alpha_{12}N_t}{K_1})\\
+             \frac{d}{dt} N_t & = r_t N_t ( 1- \frac{N_t+\alpha_{12}N_e}{K_2})
+       \end{array}
+\right.
+\end{equation}
+
+
+
+For simplicity, we assume that the total capacity of charging stations is proportional to the number of electrical vehicles $N_e$, i.e.
+
+\begin{equation}
+\label{propor}
+  \sum Cap(i) \varpropto N_e
+\end{equation}
+
+Which indicates that the construction of charing station can be guided by the time evolution of electric vehicles.
+
+For the case in Ireland, we can predict the evolution process based on Equation~\ref{competition_2}, \
+and Figure~\ref{fig_evolution} show the result of our prediction.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3in]{evolution.pdf}
+%\vspace{-0.1in}
+\caption{The Evolution Process in Ireland}
+\label{fig_evolution}
+%\vspace{-0.2in}
+\end{figure}
+From Figure~\ref{fig_evolution},
+we can see that $10\%$
+
+\subsection{City-based Charger, Rural Charger, Population Density Distribution and Wealth Distribution}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1in]{Ire_Population_Dens.pdf}
+\includegraphics[width=1in]{Ire_wealth.pdf}
+%\vspace{-0.1in}
+\caption{Interstate difference of Ireland.}
+\label{fig_stages}
+%\vspace{-0.2in}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1in]{stage0.pdf}
+\includegraphics[width=1in]{stage1.pdf}
+\includegraphics[width=1in]{stage2.pdf}
+%\vspace{-0.1in}
+\caption{Time evolution of the electric charging station in Ireland.}
+\label{fig_stages}
+%\vspace{-0.2in}
+\end{figure}
+
+As shown in Figure~\ref{fig_stages} the first stage is the current distribution of charging stations in Ireland. 
+The algorithm automatically generate the distribution after five years and a decade, which are stage 2 and 3 respectively. 
+It shows that the second stage covers most of the cities, villages and towns. 
+Which is not surprising since not only does the urban area have a higher population density it also has a higher income per capita. 
+It is also worthy noting that the interstate difference of population density as well as disposable income per hose hold may also impact the time evolution process.
+
+\subsection{Other Transportation Options}

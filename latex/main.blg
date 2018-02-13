@@ -1,0 +1,20 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+The style file: IEEEtrans.bst
+Database file #1: icmmcm.bib
+-- IEEEtranS.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Sorting version - not for normal IEEE work.
+Warning--to sort, need author, organization, or key in ChargerStationData
+Warning--to sort, need author, organization, or key in PythonScrapy
+Warning--to sort, need author, organization, or key in SuperRange
+Warning--to sort, need author, organization, or key in CarRange
+Warning--to sort, need author, organization, or key in connectivity
+Warning--to sort, need author, organization, or key in connectivity_algo
+Warning--to sort, need author, organization, or key in Dijkstra
+Warning--to sort, need author, organization, or key in LAMap
+Warning--to sort, need author, organization, or key in Induced_Subgraph
+Warning--to sort, need author, organization, or key in Greedy_Algorithm
+
+Done.
+(There were 10 warnings)
